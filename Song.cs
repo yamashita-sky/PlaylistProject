@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PlaylistProject
 {
+    /// <summary>
+    /// Song subclass to be used by Album
+    /// </summary>
     public class Song
     {
         public string title { get; set; }

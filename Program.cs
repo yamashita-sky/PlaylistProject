@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            /// <summary>
+            /// Available songs to choose from within an album
+            /// </summary>
+            /// <param name="PlaylistProject"></param>
             Album LevelUp = new Album("LevelUp");
             LevelUp.Songs.Add(new Song("0. Road Trip", "Ninja Sex Party", 3.06));
             LevelUp.Songs.Add(new Song("1. Attitude City", "Ninja Sex Party", 3.14));
@@ -23,7 +27,10 @@
 
             Playlist playlistA = new Playlist();
             int index;
-
+            /// <summary>
+            /// The choices you have to edit your playlist
+            /// </summary>
+            /// <param name="PlaylistProject"></param>
             while (true)
             {
                 Console.WriteLine("\nYOUR CHOICES:");

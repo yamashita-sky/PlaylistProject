@@ -14,28 +14,27 @@ namespace PlaylistProject
         {
             Songs = new List<Song>();
         }
-
+        /// <summary>
+        /// Adds a song
+        /// </summary>
+        /// <param name="song"></param>
         public void AddSong(Song song)
         {
             Songs.Add(song);
             Console.WriteLine($"Added '{song.title}' by {song.artist} to the playlist.");
         }
-
+        /// <summary>
+        /// Removes a song
+        /// </summary>
+        /// <param name="song"></param>
         public void RemoveSong(Song song)
         {
             Songs.Remove(song);
             Console.WriteLine($"Removed '{song.title}' by {song.artist} from the playlist");
         }
-
-        public void DisplayPlaylist()
-        {
-            Console.WriteLine("Playlist:");
-            foreach (var song in Songs)
-            {
-                Console.WriteLine($"Title: {song.title}, Artist: {song.artist}, Duration: {song.runtime} minutes");
-            }
-        }
-
+        /// <summary>
+        /// Shuffles the playlist
+        /// </summary>
         public void Shuffle()
         {
             Random random = new Random();
@@ -50,6 +49,10 @@ namespace PlaylistProject
                 Songs[n] = value;
             }
         }
+        /// <summary>
+        /// Displays a specific song
+        /// </summary>
+        /// <param name="song"></param>
         public void DisplayASong(Song song)
         {
             if (Songs.Contains(song))

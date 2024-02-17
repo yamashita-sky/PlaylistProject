@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PlaylistProject
 {
+    /// <summary>
+    /// Did not get to implementing this ;(
+    /// </summary>
     public enum Genre
     {
         Rock,

@@ -8,20 +8,14 @@ namespace PlaylistProject
 {
     public class Album : SongList
     {
+        /// <summary>
+        /// Album class that stores songs within it (inherits fields from Songlist.cs)
+        /// </summary>
         public List<Song> Songs { get; set; }
         public string Name { get; set; }
         public string BandName {  get; set; }
         public List<string> BandMembers { get; set; }
         public string releasedate { get; set; }
-        //List<string> Songs { get; set; }
-
-        /*public Album(string BandName, List<string> BandMembers, string ReleaseDate)
-        {
-            this.BandName = BandName;
-            this.BandMembers = BandMembers;
-            this.releasedate = ReleaseDate;
-
-        }*/
         public Album(string Aname)
         {
             this.Name = Aname;
